@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "filmcraft":   { "command": "C:\\Program Files\\FilmCraft\\filmcraft-cli.exe",   "args": ["mcp"] },
+    "filmcraft-live": { "command": "C:\\Program Files\\FilmCraft\\filmcraft-cli.exe", "args": ["mcp", "--bridge", "127.0.0.1:9876"] },
+    "lightcraft":  { "command": "C:\\Program Files\\LightCraft\\lightcraft-cli.exe",  "args": ["mcp", "--compact"] },
+    "lightcraft-live": { "command": "C:\\Program Files\\LightCraft\\lightcraft-cli.exe", "args": ["mcp", "--connect", "127.0.0.1:7980"] },
+    "photocraft":  { "command": "C:\\Program Files\\PhotoCraft\\photocraft-cli.exe",  "args": ["mcp"] },
+    "effectcraft": { "command": "C:\\Program Files\\EffectCraft\\effectcraft-cli.exe", "args": ["mcp"] }
+  }
+}

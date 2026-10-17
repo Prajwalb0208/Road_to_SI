@@ -1,0 +1,152 @@
+[
+[
+"ui.set",
+{
+"fit": true
+},
+5000
+],
+[
+"cmd:layer.newAdjustmentLayer.curves",
+{
+"points": [
+[
+0,
+0
+],
+[
+60,
+48
+],
+[
+128,
+128
+],
+[
+196,
+206
+],
+[
+255,
+255
+]
+]
+},
+3500
+],
+[
+"cmd:layer.setProps",
+{
+"name": "Contrast curve"
+},
+3500
+],
+[
+"cmd:gradient.fill.create",
+{
+"from": [
+1200,
+800
+],
+"to": [
+2450,
+1650
+],
+"style": "radial",
+"stops": [
+[
+0,
+"#000000"
+],
+[
+1,
+"#000000"
+]
+],
+"transparency": [
+[
+0,
+0
+],
+[
+0.5,
+0
+],
+[
+1,
+75
+]
+],
+"mode": "multiply"
+},
+3500
+],
+[
+"cmd:layer.setProps",
+{
+"name": "Vignette",
+"opacity": 0.85
+},
+3600
+],
+[
+"cmd:type.create",
+{
+"x": 2290,
+"y": 250,
+"text": "GREAT CORMORANT",
+"name": "Species",
+"font": "Impact",
+"size": 120,
+"color": "#ffffff",
+"align": "right"
+},
+3600
+],
+[
+"cmd:type.create",
+{
+"x": 2284,
+"y": 320,
+"text": "Phalacrocorax carbo  \u00c2\u00b7  Nikon D500  \u00c2\u00b7  edited by AI",
+"name": "Credit",
+"font": "Bahnschrift",
+"size": 40,
+"color": "#FFD23F",
+"align": "right"
+},
+4000
+],
+[
+"ui.set",
+{
+"zoom": 1.0,
+"center": [
+1830,
+240
+]
+},
+5000
+],
+[
+"ui.set",
+{
+"fit": true
+},
+3000
+],
+[
+"app.save",
+{
+"path": "cormorant_layers.psd"
+},
+1500
+],
+[
+"app.save",
+{
+"path": "cormorant_post.jpg"
+},
+3000
+]
+]
