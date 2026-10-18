@@ -1,0 +1,31 @@
+{
+ "rows": [
+  [
+   "Rent",
+   1350
+  ],
+  [
+   "Groceries",
+   480
+  ],
+  [
+   "Transport",
+   160
+  ],
+  [
+   "Utilities",
+   190
+  ],
+  [
+   "Subscriptions",
+   65
+  ],
+  [
+   "Eating out",
+   220
+  ]
+ ],
+ "income": 4200,
+ "total": 2465,
+ "left": 1735
+}

@@ -1,0 +1,127 @@
+[
+[
+"new_presentation",
+{
+"blank": true,
+"theme": "Harbor"
+},
+900
+],
+[
+"add_slide",
+{
+"layout": "title",
+"title": "October budget",
+"body": "Where $4,200 went"
+},
+900
+],
+[
+"add_slide",
+{
+"layout": "titleOnly",
+"title": "Where the money goes"
+},
+400
+],
+[
+"insert_chart",
+{
+"type": "doughnut",
+"categories": [
+"Rent",
+"Groceries",
+"Transport",
+"Utilities",
+"Subscriptions",
+"Eating out"
+],
+"series": [
+{
+"name": "Amount",
+"values": [
+1350,
+480,
+160,
+190,
+65,
+220
+]
+}
+]
+},
+300
+],
+[
+"run_command",
+{
+"command": "shape.setBounds",
+"params": {
+"x": 170,
+"y": 125,
+"w": 620,
+"h": 390
+}
+},
+1100
+],
+[
+"add_slide",
+{
+"layout": "titleAndContent",
+"title": "Top 3 costs",
+"body": "Rent \u2014 $1,350\nGroceries \u2014 $480\nEating out \u2014 $220"
+},
+1100
+],
+[
+"add_slide",
+{
+"layout": "titleOnly",
+"title": "Spent vs left over"
+},
+400
+],
+[
+"insert_chart",
+{
+"type": "column",
+"categories": [
+"Spent",
+"Left over"
+],
+"series": [
+{
+"name": "October",
+"values": [
+2465,
+1735
+]
+}
+]
+},
+300
+],
+[
+"run_command",
+{
+"command": "shape.setBounds",
+"params": {
+"x": 170,
+"y": 125,
+"w": 620,
+"h": 390
+}
+},
+1100
+],
+[
+"add_slide",
+{
+"layout": "titleAndContent",
+"title": "Takeaway",
+"body": "41% of income left over\nHalve eating out \u2192 +$110 a month"
+},
+1500
+]
+]

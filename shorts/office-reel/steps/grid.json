@@ -1,0 +1,312 @@
+[
+[
+"new_workbook",
+{},
+1200
+],
+[
+"execute_command",
+{
+"command": "view.zoom",
+"params": {
+"percent": 170
+}
+},
+600
+],
+[
+"set_cell",
+{
+"cell": "A1",
+"input": "October budget"
+},
+300
+],
+[
+"set_cell",
+{
+"cell": "A3",
+"input": "Category"
+},
+200
+],
+[
+"set_cell",
+{
+"cell": "B3",
+"input": "Amount"
+},
+200
+],
+[
+"set_cell",
+{
+"cell": "C3",
+"input": "% of income"
+},
+200
+],
+[
+"set_cell",
+{
+"cell": "A4",
+"input": "Rent"
+},
+160
+],
+[
+"set_cell",
+{
+"cell": "B4",
+"input": 1350
+},
+160
+],
+[
+"set_cell",
+{
+"cell": "A5",
+"input": "Groceries"
+},
+160
+],
+[
+"set_cell",
+{
+"cell": "B5",
+"input": 480
+},
+160
+],
+[
+"set_cell",
+{
+"cell": "A6",
+"input": "Transport"
+},
+160
+],
+[
+"set_cell",
+{
+"cell": "B6",
+"input": 160
+},
+160
+],
+[
+"set_cell",
+{
+"cell": "A7",
+"input": "Utilities"
+},
+160
+],
+[
+"set_cell",
+{
+"cell": "B7",
+"input": 190
+},
+160
+],
+[
+"set_cell",
+{
+"cell": "A8",
+"input": "Subscriptions"
+},
+160
+],
+[
+"set_cell",
+{
+"cell": "B8",
+"input": 65
+},
+160
+],
+[
+"set_cell",
+{
+"cell": "A9",
+"input": "Eating out"
+},
+160
+],
+[
+"set_cell",
+{
+"cell": "B9",
+"input": 220
+},
+160
+],
+[
+"set_cell",
+{
+"cell": "A12",
+"input": "Income"
+},
+200
+],
+[
+"set_cell",
+{
+"cell": "B12",
+"input": 4200
+},
+250
+],
+[
+"set_cell",
+{
+"cell": "A10",
+"input": "Total spent"
+},
+200
+],
+[
+"set_cell",
+{
+"cell": "B10",
+"input": "=SUM(B4:B9)"
+},
+700
+],
+[
+"set_cell",
+{
+"cell": "A13",
+"input": "Left over"
+},
+200
+],
+[
+"set_cell",
+{
+"cell": "B13",
+"input": "=B12-B10"
+},
+700
+],
+[
+"set_cell",
+{
+"cell": "C4",
+"input": "=B4/$B$12"
+},
+140
+],
+[
+"set_cell",
+{
+"cell": "C5",
+"input": "=B5/$B$12"
+},
+140
+],
+[
+"set_cell",
+{
+"cell": "C6",
+"input": "=B6/$B$12"
+},
+140
+],
+[
+"set_cell",
+{
+"cell": "C7",
+"input": "=B7/$B$12"
+},
+140
+],
+[
+"set_cell",
+{
+"cell": "C8",
+"input": "=B8/$B$12"
+},
+140
+],
+[
+"set_cell",
+{
+"cell": "C9",
+"input": "=B9/$B$12"
+},
+140
+],
+[
+"set_cell",
+{
+"cell": "C13",
+"input": "=B13/B12"
+},
+400
+],
+[
+"format_range",
+{
+"range": "C4:C13",
+"numberFormat": "0%"
+},
+300
+],
+[
+"format_range",
+{
+"range": "B4:B13",
+"numberFormat": "$#,##0"
+},
+300
+],
+[
+"format_range",
+{
+"range": "A1",
+"bold": true,
+"fontSize": 16
+},
+250
+],
+[
+"format_range",
+{
+"range": "A3:C3",
+"bold": true,
+"borders": "bottom",
+"fillColor": "#FFE7CC"
+},
+250
+],
+[
+"format_range",
+{
+"range": "A10:C13",
+"bold": true
+},
+250
+],
+[
+"execute_command",
+{
+"command": "home.autofitColumnWidth",
+"params": {
+"cols": "A:C"
+}
+},
+400
+],
+[
+"insert_chart",
+{
+"range": "A3:B9",
+"type": "doughnut",
+"title": "Where the money goes",
+"at": "E3"
+},
+2500
+]
+]

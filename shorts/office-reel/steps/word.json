@@ -1,0 +1,271 @@
+[
+[
+"new_document",
+{
+"template": "blank"
+},
+900
+],
+[
+"execute",
+{
+"command": "view.zoom",
+"params": {
+"value": 150
+}
+},
+300
+],
+[
+"execute",
+{
+"command": "para.heading1"
+},
+200
+],
+[
+"type_text",
+{
+"text": "October budget report",
+"paragraphs": true
+},
+400
+],
+[
+"type_text",
+{
+"text": "\n",
+"paragraphs": true
+},
+150
+],
+[
+"execute",
+{
+"command": "para.normal"
+},
+150
+],
+[
+"type_text",
+{
+"text": "Income was $4,200. Spending came to $2,465, which leaves $1,735 \u2014 41% of income.",
+"paragraphs": true
+},
+700
+],
+[
+"type_text",
+{
+"text": "\n",
+"paragraphs": true
+},
+150
+],
+[
+"execute",
+{
+"command": "para.heading2"
+},
+200
+],
+[
+"type_text",
+{
+"text": "Biggest costs",
+"paragraphs": true
+},
+300
+],
+[
+"type_text",
+{
+"text": "\n",
+"paragraphs": true
+},
+150
+],
+[
+"execute",
+{
+"command": "para.normal"
+},
+150
+],
+[
+"execute",
+{
+"command": "insert.table",
+"params": {
+"rows": 4,
+"cols": 2
+}
+},
+600
+],
+[
+"type_text",
+{
+"text": "Category"
+},
+150
+],
+[
+"execute",
+{
+"command": "caret.right"
+},
+100
+],
+[
+"type_text",
+{
+"text": "Amount"
+},
+150
+],
+[
+"execute",
+{
+"command": "caret.right"
+},
+100
+],
+[
+"type_text",
+{
+"text": "Rent"
+},
+150
+],
+[
+"execute",
+{
+"command": "caret.right"
+},
+100
+],
+[
+"type_text",
+{
+"text": "$1,350"
+},
+150
+],
+[
+"execute",
+{
+"command": "caret.right"
+},
+100
+],
+[
+"type_text",
+{
+"text": "Groceries"
+},
+150
+],
+[
+"execute",
+{
+"command": "caret.right"
+},
+100
+],
+[
+"type_text",
+{
+"text": "$480"
+},
+150
+],
+[
+"execute",
+{
+"command": "caret.right"
+},
+100
+],
+[
+"type_text",
+{
+"text": "Eating out"
+},
+150
+],
+[
+"execute",
+{
+"command": "caret.right"
+},
+100
+],
+[
+"type_text",
+{
+"text": "$220"
+},
+150
+],
+[
+"execute",
+{
+"command": "caret.right"
+},
+100
+],
+[
+"execute",
+{
+"command": "caret.docEnd"
+},
+150
+],
+[
+"type_text",
+{
+"text": "\n",
+"paragraphs": true
+},
+150
+],
+[
+"execute",
+{
+"command": "para.heading2"
+},
+200
+],
+[
+"type_text",
+{
+"text": "Next month",
+"paragraphs": true
+},
+300
+],
+[
+"type_text",
+{
+"text": "\n",
+"paragraphs": true
+},
+150
+],
+[
+"execute",
+{
+"command": "para.normal"
+},
+150
+],
+[
+"type_text",
+{
+"text": "Halve eating out to save about $110 a month.",
+"paragraphs": true
+},
+1800
+]
+]
