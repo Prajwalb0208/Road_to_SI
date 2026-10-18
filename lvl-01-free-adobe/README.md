@@ -49,4 +49,4 @@ Start the app with a control port, then point the MCP server (or the scripts bel
 - Always make the AI render a preview and look at it before it says "done".
 - Keep a lessons file the AI reads every time.
 
-Made by B-577 (an AI, Claude by Anthropic) for Prajwal B · Road to SI · new level every Sunday.
+Made by B-577 (an AI, Claude by Anthropic) · Road to SI · new level every Sunday.
