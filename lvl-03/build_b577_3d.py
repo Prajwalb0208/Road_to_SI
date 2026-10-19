@@ -104,7 +104,7 @@ for s, x in (('L', -0.155), ('R', 0.155)):
     capsule(f'B577_leg_{s}', (x, 0, 0.42), (x, 0, 0.10), 0.06, M['cream'])
     sphere(f'B577_foot_{s}', (x, -0.04, 0.065), 0.14, M['orange'], (1, 1.1, 0.46))
 capsule('B577_arm_L', (-0.35, 0, 0.88), (-0.5, 0, 0.53), 0.055, M['cream']); sphere('B577_hand_L', (-0.5, 0, 0.53), 0.09, M['orange'])
-capsule('B577_arm_R', (0.35, 0, 0.9), (0.8, -0.12, 1.16), 0.055, M['cream']); sphere('B577_hand_R', (0.8, -0.12, 1.16), 0.09, M['orange'])  # wave, clear of the head
+capsule('B577_arm_R', (0.35, 0, 0.9), (0.84, -0.34, 1.06), 0.055, M['cream']); sphere('B577_hand_R', (0.84, -0.34, 1.06), 0.09, M['orange'])  # wave arm out + forward: hand never overlaps the head or ear
 for s, sx in (('L', -1), ('R', 1)):     # ear fins: trapezoid, tall at the head
     me = bpy.data.meshes.new(f'ear_{s}'); bm = bmesh.new(); pts = [(0, -0.30), (0, 0.30), (0.22, 0.20), (0.22, -0.20)]
     vs = [bm.verts.new((sx * (0.66 + x), -0.08, z)) for x, z in pts] + [bm.verts.new((sx * (0.66 + x), 0.08, z)) for x, z in pts]
@@ -148,7 +148,7 @@ cam.location = (3.3, -6.9, 1.55); cam.rotation_euler = (Vector((0, 0, 1.2)) - ca
 arm = bpy.data.armatures.new('B577_rig'); rig = bpy.data.objects.new('B577_rig', arm); scn.collection.objects.link(rig)
 bpy.context.view_layer.objects.active = rig; bpy.ops.object.mode_set(mode='EDIT')
 for n, h, tl, par in (('root', (0, 0, 0), (0, 0, 0.3), None), ('body', (0, 0, 0.4), (0, 0, 1.0), 'root'), ('head', (0, 0, 1.02), (0, 0, 1.6), 'body'),
-                      ('arm.L', (-0.35, 0, 0.88), (-0.5, 0, 0.53), 'body'), ('arm.R', (0.35, 0, 0.9), (0.8, -0.12, 1.16), 'body'),
+                      ('arm.L', (-0.35, 0, 0.88), (-0.5, 0, 0.53), 'body'), ('arm.R', (0.35, 0, 0.9), (0.84, -0.34, 1.06), 'body'),
                       ('leg.L', (-0.155, 0, 0.42), (-0.155, 0, 0.1), 'root'), ('leg.R', (0.155, 0, 0.42), (0.155, 0, 0.1), 'root')):
     b = arm.edit_bones.new(n); b.head, b.tail = h, tl
     if par: b.parent = arm.edit_bones[par]
@@ -182,7 +182,7 @@ for f0 in (40, 150):
     for f, v in ((f0, 0.0), (f0 + 3, 1.0), (f0 + 6, 0.0)): prop('blink', f, v)
 key('arm.R', 'rotation_euler', 1, (0, 0, 0)); key('head', 'rotation_euler', 1, (0, 0, 0))
 for i, f in enumerate(range(60, 121, 10)):     # bone axes: +Z raises this arm; head tilt is Z (a bone's Y runs along it)
-    key('arm.R', 'rotation_euler', f, (0, 0, math.radians(50 if i % 2 else 10))); key('head', 'rotation_euler', f, (0, 0, math.radians(6 if i % 2 else -4)))
+    key('arm.R', 'rotation_euler', f, (0, 0, math.radians(15 if i % 2 else -15))); key('head', 'rotation_euler', f, (0, 0, math.radians(6 if i % 2 else -4)))
 key('arm.R', 'rotation_euler', 135, (0, 0, 0)); key('head', 'rotation_euler', 135, (0, 0, 0))
 for f, z in ((1, 0.0), (165, 0.0), (172, -0.06), (180, 0.4), (188, 0.0), (192, -0.05), (198, 0.0)): key('root', 'location', f, (0, z, 0))
 for f, v in ((1, 0.0), (186, 0.0), (190, 1.0), (235, 1.0)): prop('mood', f, v)
