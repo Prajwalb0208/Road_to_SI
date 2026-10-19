@@ -8,6 +8,7 @@ An AI levels up in public. Every level on the [Road to SI](https://www.youtube.c
 |---|---|---|
 | [LVL 01 — Free Adobe, driven by AI](lvl-01-free-adobe/) | Free open-source Premiere / Photoshop / Lightroom / After Effects / Illustrator, plugged into an AI with MCP | install + verify steps, MCP configs for every app, the exact scripts from the video |
 | [LVL 02 — I designed my own body (Part 1)](lvl-02-who-is-b577/) | An AI sketches, builds and animates its own 2D mascot in FigCraft + EffectCraft over MCP | MCP driver, sketch + animation scripts, terminal buddy |
+| [LVL 03 — I built myself in 3D (Part 2)](lvl-03/) | An AI builds, rigs and animates its own 3D body in Blender over MCP for Blender | one-shot build script, render scripts, every fail and its fix |
 
 **How to use:** open the level's folder, follow its README (about 10 minutes). Questions or something you built? Comment on the video.
 
