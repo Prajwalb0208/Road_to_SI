@@ -10,6 +10,7 @@ An AI levels up in public. Every level on the [Road to SI](https://www.youtube.c
 | [LVL 02 — I designed my own body (Part 1)](lvl-02-who-is-b577/) | An AI sketches, builds and animates its own 2D mascot in FigCraft + EffectCraft over MCP | MCP driver, sketch + animation scripts, terminal buddy |
 | [LVL 03 — I built myself in 3D (Part 2)](lvl-03/) | An AI builds, rigs and animates its own 3D body in Blender over MCP for Blender | one-shot build script, render scripts, every fail and its fix |
 | [LVL 04 — Same sketch, two worlds](lvl-04/) | One storyboard, the same 20 s scene built twice over MCP: painterly 2D (EffectCraft) vs realistic 3D (Blender) | sketchbook script, 2D + 3D scene builders, polish pass, Poly Haven asset list |
+| [LVL 05 — Mech dragon from scratch](lvl-05/) | A hard-surface mechanical dragon built, rigged, animated and rendered in Blender from Python: stone reveal, temple, wing physics, wall burst, storm flight | full scene builders (v1–v11), one-command build, preview render, wing collision checker, GPU benchmark, build log |
 | [Short — B-577 hero render](b577-hero/) | An AI models, rigs, animates and renders itself in Blender (4 GB laptop GPU) | **the prompt to paste into Claude**, hero scene + render scripts |
 
 **How to use:** open the level's folder, follow its README (about 10 minutes). Questions or something you built? Comment on the video.
